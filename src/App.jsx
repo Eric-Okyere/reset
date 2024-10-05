@@ -1,15 +1,16 @@
-
+import { Route, Routes } from 'react-router-dom';
+import Resetpass from './Resetpass';
 
 function App() {
  
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline flex justify-center">
-      Reset Password
-    </h1>
-  
-       
+     <Routes>
+     <Route path="/user/id" element={<Resetpass />} />
+     </Routes>
+{/*   
+       <h1>hi</h1> */}
     </>
   )
 }
